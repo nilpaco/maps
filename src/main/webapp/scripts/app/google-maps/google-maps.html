@@ -1,6 +1,7 @@
 <div ng-cloak>
     <h2><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Google maps</h2>
     <hr>
+
     <div class="row">
         <div class="col-sm-9">
             <div class="input-group" id="searchboxdiv">
@@ -28,14 +29,12 @@
                     <ui-gmap-markers idkey="map.id"
                                      models="map.markers"
                                      coords="'self'"
-                                     icon="'icon'"
-                                     events="clickEventsObject">
+                                     icon="'icon'">
                         <ui-gmap-windows>
                             <div ng-non-bindable>
                                 <div style="display: table; table-layout: fixed;width: 350px;">
                                     <div class="" style="display: table-cell;padding-left: 5px;">
                                         <h1 style="font-size: 22px;margin: 0px 0px 3px 0px;">{{id}}</h1>
-
                                         <p>
                                             <i>{{ description }}</i><br style="margin-bottom: 6px;">
                                         </p>
@@ -62,8 +61,6 @@
     </div>
 </div>
 
-<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
-
 <style>
-    .angular-google-map-container { height: 400px; }
+    .angular-google-map-container {height: 400px;}
 </style>

@@ -30,6 +30,7 @@ angular.module('mapsApp')
 
         uiGmapGoogleMapApi.then(function (maps) {
             maps.visualRefresh = true;
+            maps.disableDefaultUI = true;
             $scope.defaultBounds = new google.maps.LatLngBounds(
                 new google.maps.LatLng(40.82148, -73.66450),
                 new google.maps.LatLng(40.66541, -74.31715)
